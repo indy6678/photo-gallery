@@ -1,10 +1,31 @@
-.gallery {
-    width: 50%;
-    border: 5px solid red;
+* {
+    /* change to border-box to define size by border globally */
+    box-sizing: border-box;
 }
 
-img {
+.gallery img {
     width: 100%;
-    border: 5px solid blue;
-    padding: 5px
+    max-width: 350px;
+    height: 300px;
 }
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #f5f6f7;
+}
+
+.header {
+    text-align: center;
+    /* set all letters to uppercase */
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+  }
