@@ -9,6 +9,7 @@
     height: 300px;
     /* remove image distortion, crop to fit */
     object-fit: cover;
+    border-radius: 10px;
 }
 
 body {
@@ -38,4 +39,10 @@ body {
     margin: 0 auto;
     /* add gutter (spacing) to images */
     gap: 16px;
+  }
+
+  /* add an empty element at the end */
+  .gallery::after {
+    content: "";
+    width: 350px;
   }
